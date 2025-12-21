@@ -1,10 +1,30 @@
+
  body {
             font-family: 'Poppins', sans-serif;
             margin: 0;
             background-color: #fff;
-        }
+        }     
+/* 
+         Update_the_layout_for_best_user_experience_
+         _fixed-bugs */
 
-      
+ .tob-img img{
+    width: 100%;
+     display: block;
+     margin: 0;
+     padding: 0;
+    
+ }
+
+
+@media (max-width:576px){
+    .tob-img{
+        width: 100%;
+    
+    }
+}
+ 
+
         .kfc-header {
             background: #fff;
             border-bottom: 1px solid #eee;
@@ -105,7 +125,6 @@
            
             width:100%;
             object-fit: cover;
-            height: 600px; 
             overflow: hidden;
             border-radius: 30px;
             margin-top: 25px;
@@ -113,14 +132,15 @@
 
         .hed_img img {
             width: 100%;
-            height: 100%;
-            object-fit: cover;
+            height: 80%;
+            object-fit: contain;
+          
         }
 
         /* CATEGORIES */
         .category-wrap {
             width: 100%;
-            overflow-x: auto;
+              flex-wrap: wrap;
         }
 
         .category-list {
@@ -129,12 +149,14 @@
             padding: 20px 10px;
             align-items: flex-start;
             justify-content: center;
+              flex-wrap: wrap;
         }
 
         .cat-item {
             text-align: center;
             min-width: 120px;
             cursor: pointer;
+              flex-wrap: wrap;
         }
 
         .cat-item img {
@@ -142,6 +164,7 @@
             height: 90px;
             object-fit: contain;
             margin-bottom: 8px;
+              flex-wrap: wrap;
         }
 
         .cat-item p {
@@ -149,11 +172,9 @@
             font-weight: 500;
             color: #000;
             line-height: 1.3;
+              flex-wrap: wrap;
         }
 
-        .category-wrap::-webkit-scrollbar {
-            display: none;
-        }
 
         .hr:hover {
             color: red;
@@ -290,10 +311,10 @@
 
         .highlight h5,
         .highlight span {
-            color: #fff; /* Changed to white for readability on red gradient */
+            color: #fff; /
         }
 
-        /* Note: highlight card text usually needs to be white if bg is red */
+       
         .highlight .add-btn {
              background: #fff;
              color: #ff2f2f;
@@ -314,7 +335,7 @@
             border-radius: 20px;
         }
 
-        /* CUSTOM FOOD CARD (Horizontal Image Style) */
+        /* CUSTOM FOOD CARD  */
         .custom-food-card {
             background: #ffffff;
             border: 1px solid #e2e2e2;
@@ -401,7 +422,7 @@
             background-color: #c0181d;
         }
 
-        /* FOOD DEAL CARD (Vertical/Square) */
+        /* FOOD DEAL CARD  */
         .food-deal-card {
             background: #ffffff;
             border: 1px solid #e2e2e2;
@@ -528,7 +549,7 @@
             margin-bottom: 12px;
         }
 
-        /* --- FIXED MISSING CSS FROM HERE --- */
+       
         .product-footer {
             display: flex;
             justify-content: space-between;
@@ -542,7 +563,6 @@
             color: #000;
         }
 
-        /* Overriding the round button style for this specific section based on HTML structure usually seen here */
         .product-footer .add-btn {
              width: auto;
              height: auto;
@@ -637,7 +657,7 @@
         }
 
         .app-mobile {
-            width: 100px; /* Adjust based on image */
+            width: 100px; 
         }
 
         .app-btns {
@@ -680,4 +700,14 @@
   .logo {
     width: 150px;
   }
+}
+
+
+
+@media (max-width:576px){
+    .hed_img{
+        width: 100%;
+        height: 100%;
+    
+    }
 }
